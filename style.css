@@ -89,8 +89,7 @@ label {
 
 }
 
- input[id^=mem-]:checked~.img,
- .mem:hover .img{
+ input[id^=mem-]:checked~.img{
      height: 25em;
  }
 
@@ -103,14 +102,23 @@ label {
      transition: 1s ease-in-out;
  }
 
- .mem:hover i {
-     transition: 1s ease;
-     transform: rotate(-90deg);
+
+ input:checked ~ .mem-top .fa-sharp.fa-solid.fa-arrow-right{
      color: yellow;
  }
 
- input:checked ~ .mem-top .fa-sharp.fa-solid.fa-arrow-right,
- .mem-top:hover .fa-sharp.fa-solid.fa-arrow-right{
-     color: yellow;
- }
+ @media (hover: hover)  {
+     .mem-top:hover .fa-sharp.fa-solid.fa-arrow-right {
+         color: yellow;
+     }
 
+     .mem:hover i {
+         transition: 1s ease;
+         transform: rotate(-90deg);
+         color: yellow;
+     }
+
+     .mem:hover .img{
+         height: 25em;
+     }
+ }
