@@ -23,6 +23,8 @@ label {
 
  img {
      height: 25em;
+     width: 100%;
+     object-fit: contain;
  }
 
  .label-top{
@@ -44,6 +46,7 @@ label {
      flex-direction: column;
      padding: 0 2vh 0 2vh;
  }
+
  body {
      background: linear-gradient(to right, #2A5470, #4C4177);
  }
@@ -57,12 +60,7 @@ label {
      transition: height 1s ease-in-out;
      margin-bottom: 2em;
      margin-top: .8em;
-     border-radius: 1em;
- }
-
- img {
-     width: 100%;
-     object-fit: contain;
+     border-radius: 10px;
  }
 
  .border {
