@@ -75,12 +75,15 @@ label {
 
  .circle {
      padding-right: 1.2em;
+     transition: color 1s ease-in-out
  }
 
  .title {
      padding-top: .5em;
      text-align: center;
+     transition: color 1s ease-in-out
  }
+
 .mem-top {
     display: flex;
     justify-content: space-between;
@@ -99,16 +102,32 @@ label {
 
  .mem i {
      transition: 1s ease-in-out;
+     opacity: 0;
  }
 
 
  input:checked ~ .mem-top .fa-sharp.fa-solid.fa-arrow-right{
      color: yellow;
+     transform: rotate(90deg);
+     opacity: 1;
  }
 
+ input[type="radio"]:checked + .border + .mem-top .circle,
+ input[type="radio"]:checked + .border + .mem-top .title{
+     color: yellow;
+ }
+
+
  @media (hover: hover)  {
-     .mem-top:hover .fa-sharp.fa-solid.fa-arrow-right {
+     .mem-top:hover .fa-sharp.fa-solid.fa-arrow-right,
+     .mem:hover .title,
+     .mem:hover .circle,
+     .mem:hover i{
          color: yellow;
+     }
+
+     .mem:hover .border {
+         background-color: yellow;
      }
 
      .mem:hover i {
@@ -119,5 +138,9 @@ label {
 
      .mem:hover .img{
          height: 25em;
+     }
+
+     .mem:hover i {
+         opacity: 1;
      }
  }
