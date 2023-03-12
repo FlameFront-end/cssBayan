@@ -60,7 +60,7 @@ label {
      transition: height 1s ease-in-out;
      margin-bottom: 2em;
      margin-top: .8em;
-     border-radius: 10px;
+     border-radius: .625em;
  }
 
  .border {
@@ -124,6 +124,20 @@ label {
 
      .title, .circle {
          font-size: 1.3em;
+     }
+ }
+
+ @media (min-width: 1920px) {
+     .head-title{
+         font-size: 3.5em;
+     }
+
+     .title, .circle {
+         font-size: 2em;
+     }
+
+     .mem-left {
+         padding-right: 1em;
      }
  }
 
