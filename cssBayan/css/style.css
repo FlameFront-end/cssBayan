@@ -92,7 +92,6 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
  input[id^=mem-]:checked~.img{
@@ -183,7 +182,7 @@ label {
          height: 25em;
      }
 
-     .mem:hover i {
+     .content:hover i {
          opacity: 1;
      }
  }
