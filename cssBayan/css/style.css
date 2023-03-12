@@ -92,6 +92,7 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
  input[id^=mem-]:checked~.img{
