@@ -121,6 +121,12 @@ label {
      color: yellow;
  }
 
+.mem:active img,
+.mem:active .mem-top,
+.mem:active .border{
+    opacity: .5;
+}
+
  @media (min-width: 821px) {
      .head-title{
          font-size: 3em;
