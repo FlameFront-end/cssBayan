@@ -6,14 +6,14 @@
  }
 
  h1 {
-     font-size: 3vw;
      color: white;
      margin-bottom: 1em;
      margin-top: 1em;
  }
 
 input {
-    display: none;
+    width: 0;
+    height: 0;
 }
 
 label {
@@ -108,13 +108,42 @@ label {
 
  input:checked ~ .mem-top .fa-sharp.fa-solid.fa-arrow-right{
      color: yellow;
-     transform: rotate(90deg);
+     transform: rotate(-90deg);
      opacity: 1;
  }
 
  input[type="radio"]:checked + .border + .mem-top .circle,
  input[type="radio"]:checked + .border + .mem-top .title{
      color: yellow;
+ }
+
+ @media (min-width: 821px) {
+     .head-title{
+         font-size: 3em;
+     }
+
+     .title, .circle {
+         font-size: 1.3em;
+     }
+ }
+
+ @media (max-width: 820px) {
+     .head-title{
+         font-size: 2.5em;
+     }
+
+     .title, .circle {
+         font-size: 1em;
+     }
+ }
+
+ @media (max-width: 320px) {
+     .head-title{
+         font-size: 2em;
+     }
+     .title, .circle {
+         font-size: .8em;
+     }
  }
 
 
